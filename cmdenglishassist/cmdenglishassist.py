@@ -2,6 +2,7 @@ import sys
 
 from .shared.parser import parser
 from .json.subparser import json_subparser
+from .card.subparser import card_subparser
 
 
 def set_default_to_help():
@@ -10,6 +11,7 @@ def set_default_to_help():
 
 def register_subparsers():
     json_subparser()
+    card_subparser()
 
 def main():
     set_default_to_help()
