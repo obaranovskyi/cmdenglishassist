@@ -1,6 +1,7 @@
 import sys
 
 from .shared.parser import parser
+from .json.subparser import json_subparser
 
 
 def set_default_to_help():
@@ -8,8 +9,7 @@ def set_default_to_help():
         sys.argv.append('-h')
 
 def register_subparsers():
-    # register subparsers here
-    pass
+    json_subparser()
 
 def main():
     set_default_to_help()
