@@ -12,7 +12,7 @@ setup(
     version='0.0.1',
     author="obaranovskyi (Oleh Baranovskyi)",
     author_email="<oleh.baranovskyi.dev.acc@gmail.com>",
-    description='Terminal task manager',
+    description='Terminal english assist.',
     long_description_content_type="text/markdown",
     long_description=long_description,
     url="https://github.com/obaranovskyi/cmdenglishassist",
