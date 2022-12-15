@@ -1,0 +1,9 @@
+source ./set_version
+
+if [ "$is_version_updated" = true ];
+then
+  rm -rf dist
+  python -m build
+  twine upload dist/* --verbose
+fi
+

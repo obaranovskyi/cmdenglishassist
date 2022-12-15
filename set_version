@@ -1,0 +1,14 @@
+version_from=$1
+version_to=$2
+is_version_updated=false
+
+if [ ! -z "$version_from" ] && [ ! -z "$version_to" ];
+then
+  sed -i '' "s/${version_from}/${version_to}/g" setup.cfg
+  sed -i '' "s/${version_from}/${version_to}/g" setup.py
+  sed -i '' "s/${version_from}/${version_to}/g" cmdenglishassist/shared/consts.py
+  is_version_updated=true
+else
+  echo "Please provide all arguments."
+fi
+
