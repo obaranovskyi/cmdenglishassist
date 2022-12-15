@@ -3,4 +3,5 @@ __all__ = [
     'card',
     'json',
     'shared',
+    'translation',
 ]
