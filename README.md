@@ -2,6 +2,13 @@
 
 It Is your daily English learning assistance.
 
+## Installation
+```bash
+curl -s https://raw.githubusercontent.com/obaranovskyi/cmdenglishassist/main/install.sh | bash /dev/stdin
+```
+
+## Usage
+
 To use `cmdenglishassist`:
 1. Enter words in google translate and split by colon;
 2. Copy the URL;
