@@ -1,6 +1,6 @@
 # cmdenglishassist
 
-It Is your daily English learning assistance.
+It Is your daily English learning assistance app.
 
 ## Installation
 ```bash
