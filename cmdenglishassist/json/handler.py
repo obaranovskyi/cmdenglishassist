@@ -1,4 +1,3 @@
-from rich import print
 import json
 from ..shared.url_core import parse_encoded_url_to_words
 from ..shared.core import convert_words_to_json_with_uuid
