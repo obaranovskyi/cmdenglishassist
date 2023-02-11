@@ -4,6 +4,7 @@ from .shared.parser import parser
 from .json.subparser import json_subparser
 from .card.subparser import card_subparser
 from .audio.subparser import audio_subparser
+from .anki.subparser import anki_subparser
 
 
 def set_default_to_help():
@@ -14,6 +15,7 @@ def register_subparsers():
     json_subparser()
     card_subparser()
     audio_subparser()
+    anki_subparser()
 
 def main():
     set_default_to_help()

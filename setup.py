@@ -9,7 +9,7 @@ with codecs.open(os.path.join(curr_location, "README.md"), encoding="utf-8") as 
 
 setup(
     name="cmdenglishassist",
-    version='0.0.1',
+    version='0.0.2',
     author="obaranovskyi (Oleh Baranovskyi)",
     author_email="<oleh.baranovskyi.dev.acc@gmail.com>",
     description='Terminal english assist.',
