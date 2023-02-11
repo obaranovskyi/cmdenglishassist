@@ -40,5 +40,5 @@ cmdenglishassist anki 'https://translate.google.com/?sl=en&tl=uk&text=1.%20Enter
 ## Uninstall
 To uninstall run the following script
 ```bash
-curl -s https://raw.githubusercontent.com/obaranovskyi/cmdenglishassist/main/install.sh | bash /dev/stdin
+curl -s https://raw.githubusercontent.com/obaranovskyi/cmdenglishassist/main/uninstall.sh | bash /dev/stdin
 ```
