@@ -4,7 +4,7 @@ BASE_TEMPLATE_STYLES = """
     font-size: 30px; 
     font-family: sans-serif; 
     text-align: center; 
-    padding: 45px;
+    padding: 20px;
   }
 </style>
 """
