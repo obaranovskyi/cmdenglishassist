@@ -2,6 +2,7 @@ import genanki
 import random
 from datetime import datetime
 from ..shared.date_core import format_dt
+from .templates import to_base_template
 
 
 def generate_anki(words):
@@ -24,8 +25,8 @@ def generate_anki(words):
             },
           ])
 
-        question = wtr.get('translation')
-        ankiAnswer = wtr.get('original_value')
+        question = to_base_template(wtr.get('translation'))
+        ankiAnswer = to_base_template(wtr.get('original_value'))
         my_note = genanki.Note(
           model=my_model,
           fields=[f'{question}', f'{ankiAnswer}'])

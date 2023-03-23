@@ -1,5 +1,6 @@
 __all__ = [
     'anki_generator',
     'handler',
-    'subparser'
+    'subparser',
+    'templates'
 ]
