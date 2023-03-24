@@ -52,10 +52,8 @@ def generate_anki(words_or_questions):
                 is_question = True if w_or_q.get('src').find('?') > -1 else False
                 sentence_in_words = w_or_q.get('src').replace('?', '').split()
                 random.shuffle(sentence_in_words)
-
                 if is_question:
                     sentence_in_words.append('?')
-                    
                 anki_question = to_base_template(f"{question_title}{' / '.join(sentence_in_words)}")
                 anki_answer = to_base_template(f"{answer_title}{w_or_q.get('src')}")
                 
