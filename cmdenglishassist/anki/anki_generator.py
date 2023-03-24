@@ -18,7 +18,7 @@ def generate_anki(words_or_questions):
             {'name': 'Question'},
             {'name': 'Answer'},
           ],
-          templates=[
+          templates = [
             {
               'name': 'Card type 1',
               'qfmt': '{{Question}}',
@@ -32,15 +32,23 @@ def generate_anki(words_or_questions):
         question_type = w_or_q.get('type')
 
         if question_type:
+            question_title = f"{w_or_q.get('questionTitle')}<br><br>" if w_or_q.get('questionTitle') else ''
+            answer_title = f"{w_or_q.get('answerTitle')}<br><br>" if w_or_q.get('answerTitle') else ''
+
+            if question_type == QuestionType.SIMPLE_QUESTION.value:
+                anki_question = to_base_template(f"{question_title}{w_or_q.get('question')}")
+                anki_answer = to_base_template(f"{answer_title}{w_or_q.get('answer')}")
+
             if question_type == QuestionType.HIDDEN_WORD_IN_SENTENCE.value:
-                title = f"{w_or_q.get('title')}<br><br>" if w_or_q.get('title') else ''
-                anki_question = w_or_q.get('src').replace('{?}', f" {w_or_q.get('question')} ")
-                anki_question = to_base_template( f'{title}{anki_question}')
-                answer = w_or_q.get('src').replace('{?}', f"<mark>{w_or_q.get('answer')}</mark>")
-                anki_answer = to_base_highlight_template(answer)
+                anki_question = w_or_q.get('src')
+                anki_answer = w_or_q.get('src')
+                for i, q in enumerate(w_or_q.get('questions')):
+                    anki_question = anki_question.replace('{'+str(i)+'}', q)
+                    anki_answer = anki_answer.replace('{'+str(i)+'}', f"<mark>{w_or_q.get('answers')[i]}</mark>")
+                anki_question = to_base_template(f'{question_title}<br><br>{anki_question}')
+                anki_answer = to_base_highlight_template(f'{answer_title}<br><br>{anki_answer}')
 
             if question_type == QuestionType.RANDOM_WORD_SENTENCE.value:
-                title = f"{w_or_q.get('title')}<br><br>" if w_or_q.get('title') else ''
                 is_question = True if w_or_q.get('src').find('?') > -1 else False
                 sentence_in_words = w_or_q.get('src').replace('?', '').split()
                 random.shuffle(sentence_in_words)
@@ -48,8 +56,8 @@ def generate_anki(words_or_questions):
                 if is_question:
                     sentence_in_words.append('?')
                     
-                anki_question = to_base_template(f"{title}{' / '.join(sentence_in_words)}")
-                anki_answer = to_base_template(w_or_q.get('src'))
+                anki_question = to_base_template(f"{question_title}{' / '.join(sentence_in_words)}")
+                anki_answer = to_base_template(f"{answer_title}{w_or_q.get('src')}")
                 
         else:
             anki_question = to_base_template(w_or_q.get('translation'))

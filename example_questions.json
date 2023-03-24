@@ -1,26 +1,35 @@
 [
   {
-    "type": 1,
-    "title": "Guess what word will be inside.",
-    "src": "I{?} that TV show for weeks!",
-    "answer": "'ve been watching",
-    "question": "____ (watch)"
-  },
-  {
-    "type": 1,
-    "title": "",
-    "src": "I{?} that TV show for weeks!",
-    "answer": " have been watching",
-    "question": "____ (watch)"
+    "type": 2,
+    "questionTitle": "Guess what word will be inside.",
+    "src": "I{0} that TV show for weeks!",
+    "answers": ["'ve been watching"],
+    "questions": ["____ (watch)"]
   },
   {
     "type": 2,
-    "title": "Arrange sentence.",
+    "questionTitle": "Question title",
+    "answerTitle": "Answer title",
+    "src": "I{0} that TV show for weeks{1}",
+    "answers": [" have been watching", "!"],
+    "questions": ["____ (watch)", "___"]
+  },
+  {
+    "type": 3,
+    "questionTitle": "Arrange sentence.",
     "src": "Who is it?"
   },
   {
-    "type": 2,
-    "title": "Arrange sentence.",
+    "type": 3,
+    "questionTitle": "Arrange sentence.(question title)",
+    "answerTitle": "Arrange sentence. (answer title)",
     "src": "I'm good, thanks."
+  },
+  {
+    "type": 1,
+    "questionTitle": "Do something.",
+    "question": "Some question",
+    "answerTitle": "Answer title",
+    "answer": "Some answer"
   }
 ]
