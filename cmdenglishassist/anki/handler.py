@@ -5,9 +5,9 @@ from ..translation.core import translate_multiple_words
 
 
 def handle(args):
-    is_url = args.url.startswith('http')
+    is_url = args.url_or_json.startswith('http')
     anki_generator.generate_anki(
-        get_word_translations(args.url) if is_url else get_questions_from_json(args.url)
+        get_word_translations(args.url_or_json) if is_url else get_questions_from_json(args.url_or_json)
     )
 
 def get_word_translations(url):
