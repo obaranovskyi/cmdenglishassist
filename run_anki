@@ -1,1 +1,1 @@
-rm anki_question2023* && ./run anki example_questions.json && open anki_question2023*
+rm anki_question2023* && ./run anki questions.json && open anki_question2023*

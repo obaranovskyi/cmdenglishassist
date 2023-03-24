@@ -45,8 +45,8 @@ def generate_anki(words_or_questions):
                 for i, q in enumerate(w_or_q.get('questions')):
                     anki_question = anki_question.replace('{'+str(i)+'}', q)
                     anki_answer = anki_answer.replace('{'+str(i)+'}', f"<mark>{w_or_q.get('answers')[i]}</mark>")
-                anki_question = to_base_template(f'{question_title}<br><br>{anki_question}')
-                anki_answer = to_base_highlight_template(f'{answer_title}<br><br>{anki_answer}')
+                anki_question = to_base_template(f'{question_title}{anki_question}')
+                anki_answer = to_base_highlight_template(f'{answer_title}{anki_answer}')
 
             if question_type == QuestionType.RANDOM_WORD_SENTENCE.value:
                 is_question = True if w_or_q.get('src').find('?') > -1 else False
