@@ -3,7 +3,7 @@ BASE_TEMPLATE_STYLES = """
   .main-container {
     font-size: 24px; 
     font-family: sans-serif; 
-    text-align: center; 
+    text-align: left; 
     padding: 20px;
   }
 </style>
