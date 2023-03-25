@@ -6,6 +6,12 @@ BASE_TEMPLATE_STYLES = """
     text-align: left; 
     padding: 20px;
   }
+  ul {
+    list-style: none;
+  }
+  ul li::before {
+    content: "- ";
+  }
 </style>
 """
 
