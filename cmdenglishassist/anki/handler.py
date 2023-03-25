@@ -6,16 +6,17 @@ from ..translation.core import translate_multiple_words
 
 
 def handle(args):
+    url_or_file = args.url_or_file
     words_or_questions = None
-    is_url = args.url_or_json.startswith('http')
-    is_json = args.url_or_json.endswith('.json')
-    is_yaml = args.url_or_json.endswith('.yml') or args.url_or_json.endswith('.yaml')
+    is_url = url_or_file.startswith('http')
+    is_json = url_or_file.endswith('.json')
+    is_yaml = url_or_file.endswith('.yml') or url_or_file.endswith('.yaml')
     if is_url:
-        words_or_questions = get_word_translations(args.url_or_json)
+        words_or_questions = get_word_translations(url_or_file)
     elif is_json:
-        words_or_questions = get_questions_from_json(args.url_or_json)
+        words_or_questions = get_questions_from_json(url_or_file)
     elif is_yaml:
-        words_or_questions = get_questions_from_yaml(args.url_or_json)
+        words_or_questions = get_questions_from_yaml(url_or_file)
     anki_generator.generate_anki(words_or_questions)
 
 
