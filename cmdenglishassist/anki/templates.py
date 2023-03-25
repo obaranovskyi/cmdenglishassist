@@ -1,7 +1,7 @@
 BASE_TEMPLATE_STYLES = """
 <style>
   .main-container {
-    font-size: 24px; 
+    font-size: 18px; 
     font-family: sans-serif; 
     text-align: left; 
     padding: 20px;
