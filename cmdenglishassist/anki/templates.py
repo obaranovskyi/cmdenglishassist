@@ -11,6 +11,7 @@ BASE_TEMPLATE_STYLES = """
   }
   ul li::before {
     content: "- ";
+    margin-left: -20px;
   }
   [class^="hi"] {
     padding: 4px 14px;
