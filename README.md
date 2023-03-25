@@ -107,6 +107,31 @@ JSON example:
 
 ## ![](assets/2023-03-24-08-07-10-image.png)
 
+### Yaml alternative
+It's important to note that instead of JSON can be used Yaml format as an alternative.
+
+The previous JSON can be translated to Yaml in the following way:
+```yaml
+- type: 1
+  questionTitle: Front header
+  question: Question
+  answerTitle: Back header
+  answer: Answer
+- type: 2
+  questionTitle: Present perfect continuous. Fill in the missing words.
+  answerTitle: 'The right answer is:'
+  src: I{0} this TV show {1}.
+  answers: 
+    - "'ve been watching"
+    - lately
+  questions:
+    - ____ (watch)
+    - ___
+- type: 3
+  questionTitle: Arrange words.
+  answerTitle: 'The right answer is:'
+  src: Who is it?
+```
 
 
 ## Uninstall

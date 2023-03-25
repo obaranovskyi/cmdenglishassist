@@ -3,5 +3,6 @@ __all__ = [
     'date_core',
     'parser',
     'read_json',
+    'read_yaml',
     'url_core',
 ]

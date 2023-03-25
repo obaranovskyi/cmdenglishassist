@@ -1,0 +1,17 @@
+- type: 3
+  questionTitle: 
+    Arrange words.
+    And do something else as this is important.
+    <br>This might be a new line and something else.
+    and even more text
+  answerTitle: 'The right answer is:'
+  src: Who is it?
+- type: 3
+  questionTitle: 
+    "
+    - Arrange words.<br>
+    - And do something else as this is important.<br>
+    - This might be a new line and something else.<br>
+    - and even more text"
+  answerTitle: 'The right answer is:'
+  src: Who is it?
