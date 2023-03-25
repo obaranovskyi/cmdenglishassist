@@ -55,7 +55,7 @@ def get_id():
     return random.randrange(1 << 30, 1 << 31)
 
 def get_titles(question): 
-    next_line = '<br><br>'
+    next_line = '<br>'
     question_title = f"{question.get('questionTitle')}{next_line}" if question.get('questionTitle') else ''
     answer_title = f"{question.get('answerTitle')}{next_line}" if question.get('answerTitle') else ''
     return question_title, answer_title
