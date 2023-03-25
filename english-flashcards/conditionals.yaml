@@ -1,0 +1,126 @@
+- type: 1
+  question: '0 conditional'
+  answer:
+    '
+    <p>We use the zero condition to talk about general truths. When in general there is a guaranteed result, like scientific fact.</p>
+
+    <p class="hi">if + present simple - present simple</p>
+
+    <i>
+      <ul>
+        <li>If this thing happens that thing happens.</li>
+        <li>That thing happens, if this thing happens.</li>
+      </ul>
+    </i>
+
+    <h3>More examples:</h3>
+    <i>
+      <ul>
+        <li>If you heat water, it evaporates.</li>
+        <li>If I am sad, I eat chocolate.</li>
+        <li>People die, if they don’t drink enough water.</li>
+        <li>If dogs get angry, they growl.</li>
+        <li>If you don’t eat enough, you lose weight.</li>
+        <li>If British people get bored, they talk about the weather.</li>
+      </ul>
+    </i>
+
+    <p class="hiy"><b>Note:</b> “If” can be replaced with the “when”, “whenever”.</p>
+
+    <i><ul>
+      <li>I smile when I am happy.</li>
+      <li>I am happy when I smile.</li>
+    </ul></i>
+
+    <p>We often use the 0 conditional to give instructions with the imperative in the main clause.</p>
+
+    <i><ul>
+      <li>If she rings the doorbell, tell her to go away!</li>
+      <li>Text me, if you get lost.</li>
+    </ul></i>
+    '
+
+
+- type: 1
+  question: '1st condition'
+  answer:
+    '
+    <p class="hi">if + present simple - will + infinitive</p>
+    <i><ul>
+      <li>If this thing happens, that thing will happen.</li>
+    </ul></i>
+
+    <h3>More Examples</h3>
+    <i><ul>
+      <li>If we don’t leave now, we will miss the train.</li>
+      <li>If you study hard, you will pass the exam.</li>
+      <li>If I see my boss, I’ll ask her.</li>
+      <li>If it gets colder, we’ll light a fire.I’ll finish my painting if I have time.</li>
+    </ul></i>
+
+    <p>It’s important to consider Modals in place of will.</p>
+    <i><ul>
+      <li>If we don’t leave now, we might miss the train.</li>
+      <li>If you study hard, you could pass the exam.</li>
+      <li>If I see my boss, I shall ask her.</li>
+      <li>If it gets colder, we should light a fire.I’ll be able to finish my painting if I have time.</li>
+    </ul></i>
+    '
+
+- type: 1
+  question: '2th condition'
+  answer:
+    '
+    <p class="hi">if + past simple - would + infinitive or,</p>
+
+    <p class="hi">if + past simple - would + present continuous</p>
+
+    <i><ul>
+      <li>If this thing happened, that thing would happen.</li>
+      <li>If this thing happened, that thing would be happening.</li>
+    </ul></i>
+
+    <h3>More Examples</h3>
+
+    <i><ul>
+      <li>If I won the lottery, I would buy a house in Barbados.</li>
+      <li>If he had more money, he would buy a boat.</li>
+    </ul></i>
+
+    <p>We can also use the second condition to talk about things in a present that are impossible. In this case it’s very common to use “I were” instead of “I was”.</p>
+
+    <i><ul>
+      <li>If I were you, I would stop poking the cat.</li>
+      <li>If he were younger, I would ask him out.</li>
+      <li>If I was taller, I would wear high heels.</li>
+    </ul></i>
+
+    <p>In second conditional sentences the continuous form of the present conditional can be used.</p>
+
+    <i><ul>
+      <li>I this thing happened that thing would be happening.</li>
+    </ul></i>
+
+    <h3>More examples:</h3>
+
+    <i><ul>
+      <li>If I spoke French, I would be living in Paris.</li>
+      <li>If I had an exam tomorrow, I would be revising now.</li>
+    </ul></i>
+    '
+
+- type: 1
+  question: '3rd conditional'
+  answer:
+    '
+    <p>We use the third conditional to talk about the past. It’s used to talk about a situation that did not happen, and to imagine the results, of this imaginary situation.</p>
+
+    <p class="hi">if + past perfect - would/have + past participle</p>
+      
+    <i><ul>
+      <li>If this thing had happened, that thing would have happened.</li>
+      <li>If I had studied harder, I would have passed the exam.</li>
+      <li>If we had left earlier, we wouldn’t have arrived late.</li>
+      <li>You wouldn’t be so tired if you had gone to bed earlier.</li>
+    </ul></i>
+    '

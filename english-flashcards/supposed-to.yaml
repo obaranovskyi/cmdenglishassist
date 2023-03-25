@@ -1,0 +1,12 @@
+- type: 1
+  question: Where can be used 'Supposed to'?
+  answer: Obligation, Belief, Expectation
+- type: 1
+  question: Provide an example of 'Supposed to' in the obligation
+  answer: You must not smoke in here.<br>James isn’t supposed to smoke in here.
+- type: 1
+  question: Provide an example of 'Supposed to' in the belief
+  answer: Many people believe that Oxford is the best university in the world.<br>Oxford is supposed to be the best University in the world.
+- type: 1
+  question: Provide an example of 'Supposed to' in the expectation
+  answer: My girlfriend shouldn’t be here. She should be at work at this time.<br>My girlfriend isn’t supposed to be here. She’s supposed to be at work at this time.
