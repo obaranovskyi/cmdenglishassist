@@ -12,6 +12,19 @@ BASE_TEMPLATE_STYLES = """
   ul li::before {
     content: "- ";
   }
+  [class^="hi"] {
+    padding: 4px 14px;
+    border-radius: 3px;
+  }
+  .hi {
+    background: aquamarine;
+  }
+  .hir {
+    background: #ffa4a4;
+  }
+  .hiy {
+    background: lightgoldenrodyellow;
+  }
 </style>
 """
 
