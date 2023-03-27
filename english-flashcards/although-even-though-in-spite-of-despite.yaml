@@ -1,0 +1,84 @@
+- type: 1
+  question:
+    <h3>Form a sentence using 'although'</h3>
+    <p><i>Last year Paul and Sarah had a holiday by the sea.</i></p>
+    <p><i>It rained a lot, but the y had a good time.</i></p>
+  answer:
+    <b>Although it rained</b> a lot, they had a good time.
+
+- type: 1
+  question:
+    <h3>Form a sentence using 'in spite of' and 'despite'</h3>
+    <p>Last year Paul and Sarah had a holiday by the sea.</p>
+    <p>It rained a lot, but the y had a good time.</p>
+  answer:
+    <p><i><b>In spite of the rain</b>, they had a good time.</i></p>
+    <p><i><b>Despite</b>, they had a good time.</i></p>
+
+- type: 1
+  question:
+    <p>What do we use after 'although'?</p>
+  answer:
+    <p>After <b>although</b> we use <i>subject + verb:</i></p>
+    <p>
+      <i><b>Although it rained</b> a lot, the had a good time.</i>
+    </p>
+    <p><i>I didn't apply for the job <b>although I had</b> the necessary qualifications.</i></p>
+
+
+- type: 1
+  question: How to use <b>in spite of</b> or <b>despite</b>?
+  answer:
+    After <b>in spite of</b> or <b>despite</b>, we use a <i>noun</i>, a <i>pronoun</i>
+    (<b>this/that/what etc.</b>) or -<b>ing</b>
+    
+    <i><ul>
+      <li><b>I spite of the rain,</b> we had a good time.</li>
+      <li>She wasn't well, but <b>in spite of this</b> she continued working.</li>
+      <li><b>In spite of what</b> I said yesterday, I still love you.</li>
+      <li>I didn't apply for the job <b>in spite of having</b> the necessary qualifications.</li>
+    </ul></i>
+
+    <p><b>Despite</b> is the same as <b>in spite of.</b> We say <b>in spite of,</b> but <b>despite</b>(without of):</p>
+    <i><ul>
+      <li>She wasn't well, but <b>despite this</b> she continued working.</li>
+    </ul></i>
+
+    <p>You can say 'in spite of the fact (that) ...' and 'despite the fact (that) ...'</p>
+    <i><ul>
+      <li>I didn't apply for the <b>job in spite of the fact</b> (that) I had the necessary qualifications.</li>
+      <li>I didn't apply for the <b>job despite the fact</b> (that) I had the necessary qualifications.</li>
+    </ul></i>
+
+
+- type: 1 
+  question: 'Compare <b>although</b> and <b>in spite of / despite:</b>'
+  answer:
+    <i><ul>
+      <li><b>Although the traffic was</b> bad, we arrived on time.</li>
+      <li><b>In spite of the traffic,</b> we arrived on time. (<i>not</i> in spite of the traffic was bad)</li>
+    </ul></i>
+
+    <i><ul>
+      <li>I couldn't sleep <b>although I was</b> very tired.</li>
+      <li>I couldn't sleep <b>despite being</b> very tired. (<i>not</i> despite I was tired)</li>
+    </ul></i>
+
+- type: 1
+  question: Provide examples <b>though = although</b>
+  answer:
+    <i><ul>
+      <li>I didn't apply for the job <b>though</b> I had the necessary qualifications.</li>
+    </ul></i>
+
+    <p>In spoken English we often use <b>though</b> at the ned of a sentence.</p>
+    <i><ul>
+      <li>The house isn't so nice. I like the garden <b>though.</b> (= but I like the garden)</li>
+      <li>I see them every day. I've never spoken to them <b>though.</b> (= but I've never spoken to them)</li>
+    </ul></i>
+
+    <p><b>Even though</b> (<i>but not</i> 'even' alone) is similar to <b>although:</b></p>
+    <i><ul>
+      <li><b>Even though</b> I was really tired, I couldn't sleep. (<i>not</i> I was really tired)</li>
+    </ul></i>
+
