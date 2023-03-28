@@ -1,0 +1,59 @@
+- type: 1
+  question: Provide an example with 'in case'
+  answer:
+    <i><ul>
+      <li>you car could have a spare wheel <b>in case</b> you have a puncture. (= because it is possible you will have a puncture)</li>
+      <li>I'd better write down my password <b>in case I forget it.</b></li>
+      <li>Shall I draw a map for you <b>in case you have a problem</b> finding our house?</li>
+      <li>I'll remind them about the meeting <b>in case they've forgotten.</b></li>
+    </ul></i>
+
+    <p>We use <b>just in case</b> for a smaller possibility</p>
+    <i><ul>
+      <li>I don't think it will rain, but I'll take an umbrella <b>just in case.</b></li>
+    </ul></i>
+
+    <p>We do not use <b>will</b> after <b>in case</b></p>
+    <i><ul>
+      <li>I'll write down my password <b>in case</b> I <b>forget</b> it. (<i>not</i> in case I will forget)</li>
+    </ul></i>
+
+- type: 1
+  question: Explain how 'in case' differs from 'if' 
+  answer:
+    <p><b>In case</b> and <b>if</b> are not the same. We use <b>in case</b> to say <i>why</i> somebody does (or doesn't do) something.</p>
+    <p>You do something <i>now</i><b>in case</b> something happens <i>later</i>.</p>
+
+    <p><b>in case</b></p>
+    <i><ul>
+      <li>We'll buy some more food <b>in case</b> Tom comes. (= Maybe Tom will come. We'll buy some food now, whether he comes or not. Then we'll <i>already</i> have the food <i>if</i> he comes.)</li>
+      <li>I'll give you my phone number <b>in case</b> you need to contact me.</li>
+      <li>You should insure your bike <b>in case</b> it is stolen.</li>
+    </ul></i>
+
+    <p><b>if</b></p>
+    <i><ul>
+      <li>We'll buy some more food <b>if</b> Tom comes. (= Maybe Tome will come. If he comes, we'll buy some more food. If he doesn't come, we won't buy any more food.)</li>
+      <li>You can call me on this number <b>if</b> you need to contact me.</li>
+      <li>You should inform the police <b>if</b> your bike is stolen.</li>
+    </ul></i>
+
+- type: 1
+  question: How to use 'in case' in past?
+  answer: 
+    <i><ul>
+      <li>I gave him my phone number <b>in case he needed</b> to contact me. (= because it was possible that he would need to contact me)</li>
+      <li>I drew a map for Sarah <b>in case she had</b> a problem finding our house.</li>
+      <li>We rang the doorbell again <b>in case they hadn't heard</b> it the first time.</li>
+    </ul></i>
+
+- type: 1
+  question:
+    Is it possible to use 'in case of' and 'if there is' interchangeably?
+  answer:
+    <p><b>in case of</b>=if there is...(especially on notices, instructions etc.)</p>
+    <i><ul>
+      <li><b>In case of fire,</b> please leave the building as quickly as possible. (= if there is a fire)</li>
+      <li><b>In case of emergency</b>, call this number. (= if there is an emergency)</li>
+    </ul></i>
+
