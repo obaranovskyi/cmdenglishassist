@@ -17,19 +17,25 @@ def generate_anki(words_or_questions):
         anki_answer = None
         question_type = w_or_q.get('type')
         if question_type:
-            if question_type == QuestionType.SIMPLE_QUESTION.value:
-                anki_question, anki_answer = generate_simple_question(w_or_q)
-            if question_type == QuestionType.HIDDEN_WORD_IN_SENTENCE.value:
-                anki_question, anki_answer = generate_hidden_word_in_sentence(w_or_q)
-            if question_type == QuestionType.RANDOM_WORD_SENTENCE.value:
-                anki_question, anki_answer = generate_random_word(w_or_q)
+            question_answer_func = get_question_answer_func(question_type)
+            anki_question, anki_answer = question_answer_func(w_or_q)
         else:
             anki_question, anki_answer = generate_translations(w_or_q)
         my_note = genanki.Note(model=model, fields=[anki_question, anki_answer])
         my_deck.add_note(my_note)
     anki_folder = './'
-    anki_questions_file = anki_folder + f"anki_question{date}.apkg"
+    anki_questions_file = anki_folder + f"anki_question_{date}.apkg"
     genanki.Package(my_deck).write_to_file(anki_questions_file)
+    return anki_questions_file
+
+
+def get_question_answer_func(question_type):
+    if question_type == QuestionType.SIMPLE_QUESTION.value:
+        return generate_simple_question
+    if question_type == QuestionType.HIDDEN_WORD_IN_SENTENCE.value:
+        return generate_hidden_word_in_sentence
+    if question_type == QuestionType.RANDOM_WORD_SENTENCE.value:
+        return generate_random_word
 
 
 def get_model(deck_name):
