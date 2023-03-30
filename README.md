@@ -133,6 +133,31 @@ The previous JSON can be translated to Yaml in the following way:
   src: Who is it?
 ```
 
+### Markdown alternative
+Probably the most straightforward way to write questions is the markdown format. Here is an example of how to do it:
+```markdown
+---
+
+# (QS):
+Here will be the question
+
+# (AS):
+Here will be the answer
+
+<div class="hi">Note: This is test</div>
+
+---
+
+# (QS):
+Here will be the second question
+
+# (AS):
+Here will be the second answer
+
+---
+
+```
+
 
 ## Uninstall
 

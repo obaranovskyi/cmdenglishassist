@@ -1,5 +1,12 @@
 BASE_TEMPLATE_STYLES = """
 <style>
+  table, td, th {
+    border: 1px solid grey;
+    border-collapse: collapse;
+  }
+  td, th {
+    padding: 10px;
+  }
   .main-container {
     font-size: 18px; 
     font-family: sans-serif; 

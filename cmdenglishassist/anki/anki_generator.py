@@ -4,9 +4,10 @@ from datetime import datetime
 from ..shared.date_core import format_dt
 from .templates import to_base_template, to_base_highlight_template
 from .question_type import QuestionType
+from .parse_type import ParseType
 
 
-def generate_anki(words_or_questions):
+def generate_anki(words_or_questions, parse_type):
     date = format_dt(datetime.now()).replace(' ', '_')
     deck_id = get_id()
     deck_name = f"English_{date}"
@@ -15,12 +16,14 @@ def generate_anki(words_or_questions):
         model = get_model(deck_name)
         anki_question = None
         anki_answer = None
-        question_type = w_or_q.get('type')
-        if question_type:
+        if parse_type == ParseType.URL.value:
+            anki_question, anki_answer = get_from_dict('translation', 'original_value', w_or_q)
+        elif parse_type == ParseType.MARKDOWN.value:
+             anki_question, anki_answer = get_from_dict('question', 'answer', w_or_q)
+        elif parse_type in [ParseType.JSON.value, ParseType.YAML.value]:
+            question_type = w_or_q.get('type')
             question_answer_func = get_question_answer_func(question_type)
             anki_question, anki_answer = question_answer_func(w_or_q)
-        else:
-            anki_question, anki_answer = generate_translations(w_or_q)
         my_note = genanki.Note(model=model, fields=[anki_question, anki_answer])
         my_deck.add_note(my_note)
     anki_folder = './'
@@ -94,8 +97,7 @@ def generate_random_word(question):
     anki_answer = to_base_template(f"{answer_title}{question.get('src')}")
     return anki_question, anki_answer
 
-def generate_translations(word):
-    anki_question = to_base_template(word.get('translation'))
-    anki_answer = to_base_template(word.get('original_value'))
+def get_from_dict(front_key, back_key, src):
+    anki_question = to_base_template(src.get(front_key))
+    anki_answer = to_base_template(src.get(back_key))
     return anki_question, anki_answer
-    
