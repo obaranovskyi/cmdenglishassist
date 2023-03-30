@@ -30,6 +30,7 @@ Here will be the the second answer
 | col 2 is |    centered   |   $12 |
 | col 3 is | right-aligned |    $1 |
 
+### Header
 - This is some test
 - This is _some test_
 - This is *another test*
