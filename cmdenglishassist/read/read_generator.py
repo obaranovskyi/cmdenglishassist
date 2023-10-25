@@ -17,6 +17,8 @@ class ReadGenerator:
         output_filename = f"{filename.split('.')[0]}.mp3"
         combined = AudioSegment.empty()
         for index, ml in enumerate(markdown_lines):
+            if len(ml) == 1 and '\n' in ml:
+                continue
             if '#' in ml:
                 if index != 0:
                     combined += self.make_pause()
