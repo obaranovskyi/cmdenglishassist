@@ -3,6 +3,7 @@ __all__ = [
     'audio',
     'card',
     'json',
+    'read',
     'shared',
     'translation',
 ]

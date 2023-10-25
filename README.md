@@ -17,6 +17,7 @@ To use `cmdenglishassist`:
 3. Use it with the current app to generate:
    - json with translations
    - mp3 with translations
+   - read markdown in English 
    - english flashcards
    - anki flashcards
 
@@ -30,6 +31,12 @@ To generate the mp3 with translations, run:
 
 ```bash
 cmdenglishassist audio 'https://translate.google.com/?sl=en&tl=uk&text=1.%20Enter%20words%20in%20google%20translate%20and%20split%20by%20colon%3B%0A2.%20Copy%20URL%20%0A3%20Use%20it%20with%20the%20current%20app%20to%20generate%20the%3A%0A&op=translate'
+```
+
+To generate the mp3 with translations, run:
+
+```bash
+cmdenglishassist read markdown_with_english_lesson.md
 ```
 
 To generate the flashcards in pdf, run:

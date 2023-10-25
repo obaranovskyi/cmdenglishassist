@@ -4,6 +4,7 @@ from .shared.parser import parser
 from .json.subparser import json_subparser
 from .card.subparser import card_subparser
 from .audio.subparser import audio_subparser
+from .read.subparser import read_subparser
 from .anki.subparser import anki_subparser
 
 
@@ -15,6 +16,7 @@ def register_subparsers():
     json_subparser()
     card_subparser()
     audio_subparser()
+    read_subparser()
     anki_subparser()
 
 def main():
